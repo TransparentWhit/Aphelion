@@ -1,0 +1,67 @@
+:root {
+    width: 100%;
+    height: 100%;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: dark;
+    color: #bbe7ffbf;
+    background-color: #070707;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --primary: #bbe7ff;
+    --accent: #bbffff;
+    --shadow: 0 4px 6px #bbe7ff1f;
+    --background: #bbe7ff1f;
+    --radius: 8px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--background);
+    color: var(--primary);
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: var(--primary);
+}
+button:focus, button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea, select, button {
+    background-color: var(--background);
+    color: var(--primary);
+}
